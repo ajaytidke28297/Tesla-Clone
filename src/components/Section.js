@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 function Section(props) {
   return (
-    <Wrap bgImage={props.backgroundImg}>
+    <Wrap bgImage={props.backgroundImg} id={props.id}>
       <Fade bottom>
         <ItemText>
           <h1>{props.title}</h1>

@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import { selectCars } from "../store/car-slice";
-import { useSelector } from "react-redux";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const cars = useSelector(selectCars);
+  const cars = ["Model S", "Model Y", "Model 3", "Model X"];
 
   const openNavMenuHandler = () => {
     setIsOpen(true);
@@ -25,38 +23,38 @@ function Header() {
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <a key={index} href="#a4">
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="/#">Shop</a>
+        <a href="/#">Tesla Account</a>
         <CustomMenu onClick={openNavMenuHandler}></CustomMenu>
       </RightMenu>
       <BurgerNav show={isOpen}>
         <CloseWrapper>
           <CustomClose onClick={closeNavMenuHandler} />
         </CloseWrapper>
-        {cars &&
+        {/* {cars &&
           cars.map((car, index) => (
             <li key={index}>
               <a href="#">{car}</a>
             </li>
-          ))}
+          ))} */}
 
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="/#">Used Inventory</a>
         </li>
         <li>
-          <a href="#">Trade-in</a>
+          <a href="/#">Trade-in</a>
         </li>
         <li>
-          <a href="#">Cybertruck</a>
+          <a href="/#">Cybertruck</a>
         </li>
         <li>
-          <a href="#">Roadster</a>
+          <a href="/#">Roadster</a>
         </li>
       </BurgerNav>
     </Container>
