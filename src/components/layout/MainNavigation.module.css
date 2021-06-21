@@ -9,12 +9,12 @@
   align-items: center;
 }
 
-.header:first-child {
-  flex-basis: 1 1 10%;
+.header > *:nth-child(1) {
+  flex: 1 1 15%;
 }
 
-.header:last-child {
-  flex-basis: 1 1 10%;
+.header *:nth-child(3) {
+  flex: 1 1 15%;
 }
 
 .header nav {
@@ -29,11 +29,11 @@
   display: flex;
 }
 
-.header a {
+/* .header a {
   text-decoration: none;
   color: inherit;
   padding: 0.7rem 1rem;
-}
+} */
 
 .logo {
   padding-left: 3rem;
@@ -44,7 +44,7 @@
 }
 
 .leftMenu {
-  flex: 1;
+  flex: 1 1 70%;
 }
 
 .logo a {

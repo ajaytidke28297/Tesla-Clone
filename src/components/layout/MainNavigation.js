@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
+import NavItem from "./NavItem";
 
 function MainNavigation(props) {
+  const { leftItems, rightItems } = useSelector((state) => state.nav);
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
@@ -12,54 +16,15 @@ function MainNavigation(props) {
       </div>
       <nav className={classes.leftMenu}>
         <ul>
-          <li>
-            <NavLink to="/ModelS">
-              <span>Model S</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Model3">
-              <span>Model 3</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/ModelX">
-              <span>Model X</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/ModelY">
-              <span>Model Y</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/SolarR">
-              <span>Solar Roof</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/SolarP">
-              <span>Solar Panels</span>
-            </NavLink>
-          </li>
+          {leftItems.map((item) => (
+            <NavItem key={item} item={item} />
+          ))}
         </ul>
       </nav>
       <ul className={classes.rightMenu}>
-        <li>
-          <NavLink to="/Model3">
-            <span>Shop</span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Model3">
-            <span>Account</span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/Model3">
-            <span>Menu</span>
-          </NavLink>
-        </li>
+        {rightItems.map((item) => (
+          <NavItem key={item} item={item} />
+        ))}
       </ul>
     </header>
   );

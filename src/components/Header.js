@@ -18,7 +18,7 @@ function Header() {
   return (
     <Container>
       <a>
-        <img src="/images/logo.svg"></img>
+        <img src="/images/logo.svg" alt="Logo"></img>
       </a>
       <Menu>
         {cars &&
