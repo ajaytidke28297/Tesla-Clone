@@ -5,22 +5,19 @@ import Fade from "react-reveal/Fade";
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundImg} id={props.id}>
-      <Fade bottom>
-        <ItemText>
-          <h1>{props.title}</h1>
-          <p>{props.description}</p>
-        </ItemText>
-      </Fade>
+      <ItemText>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+      </ItemText>
+
       <Buttons>
-        <Fade bottom>
-          <ButtonGroup>
-            {props.leftBtnText && <LeftButton>{props.leftBtnText}</LeftButton>}
-            {props.rightBtnText && (
-              <RightButton>{props.rightBtnText}</RightButton>
-            )}
-          </ButtonGroup>
-          <DownArrow src="/images/down-arrow.svg" />
-        </Fade>
+        <ButtonGroup>
+          {props.leftBtnText && <LeftButton>{props.leftBtnText}</LeftButton>}
+          {props.rightBtnText && (
+            <RightButton>{props.rightBtnText}</RightButton>
+          )}
+        </ButtonGroup>
+        <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -30,7 +27,7 @@ export default Section;
 
 const Wrap = styled.div`
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;

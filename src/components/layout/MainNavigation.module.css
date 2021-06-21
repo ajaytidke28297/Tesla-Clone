@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+.header:first-child {
+  flex-basis: 1 1 10%;
+}
+
+.header:last-child {
+  flex-basis: 1 1 10%;
+}
+
+.header nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.7rem 1rem;
+}
+
+.logo {
+  padding-left: 3rem;
+}
+
+.rightMenu {
+  padding-right: 3rem;
+}
+
+.leftMenu {
+  flex: 1;
+}
+
+.logo a {
+  display: block;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.header span {
+  margin: 0 1rem;
+}
