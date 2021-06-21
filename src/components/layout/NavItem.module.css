@@ -1,3 +1,14 @@
 .item {
-  background: orangered;
+  transition: all 0.2s ease-in;
+}
+
+.item a {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  color: inherit;
+}
+
+.item:hover {
+  background: #cdcdcd;
+  border-radius: 10px;
 }
