@@ -7,7 +7,7 @@ const carSlice = createSlice({
       {
         id: "a1",
         title: "Model S",
-        description: "Order online for touchless delivery",
+        description: "Order Online for Touchless Delivery",
         backgroundImg: "model-s.jpg",
         leftBtnText: "Custom order",
         rightBtnText: "Existing inventory",
@@ -15,7 +15,7 @@ const carSlice = createSlice({
       {
         id: "a2",
         title: "Model Y",
-        description: "Order online for touchless delivery",
+        description: "Order Online for Touchless Delivery",
         backgroundImg: "model-y.jpg",
         leftBtnText: "Custom order",
         rightBtnText: "Existing inventory",
@@ -23,7 +23,7 @@ const carSlice = createSlice({
       {
         id: "a3",
         title: "Model 3",
-        description: "Order online for touchless delivery",
+        description: "Order Online for Touchless Delivery",
         backgroundImg: "model-3.jpg",
         leftBtnText: "Custom order",
         rightBtnText: "Existing inventory",
@@ -31,7 +31,7 @@ const carSlice = createSlice({
       {
         id: "a4",
         title: "Model X",
-        description: "Order online for touchless delivery",
+        description: "Order Online for Touchless Delivery",
         backgroundImg: "model-x.jpg",
         leftBtnText: "Custom order",
         rightBtnText: "Existing inventory",

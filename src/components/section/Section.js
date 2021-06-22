@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import classes from "./Section.module.css";
+import Button from "../ui/Button";
 
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundImg} id={props.id}>
-      <ItemText>
+      <div className={classes.heading}>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
-      </ItemText>
+      </div>
 
       <Buttons>
-        <ButtonGroup>
-          {props.leftBtnText && <LeftButton>{props.leftBtnText}</LeftButton>}
+        <div className={classes["button-group"]}>
+          {props.leftBtnText && <Button text={props.leftBtnText} />}
           {props.rightBtnText && (
             <RightButton>{props.rightBtnText}</RightButton>
           )}
-        </ButtonGroup>
+        </div>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
     </Wrap>
@@ -36,21 +38,6 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`;
-
-const ItemText = styled.div`
-  padding-top: 15vh;
-  text-align: center;
-`;
-
-const ButtonGroup = styled.div`
-  display: flex;
-  /* flex-direction: column; */
-  margin-bottom: 30px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
 
 const LeftButton = styled.div`

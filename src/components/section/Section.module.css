@@ -1,0 +1,30 @@
+.heading {
+  padding-top: 15vh;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.heading h1 {
+  font-size: 4rem;
+}
+
+.heading p {
+  font-size: 1.4rem;
+}
+
+.button-group {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.leftButton {
+  background: rgba(23, 26, 32, 0.8);
+  border: 1 px solid rgba(23, 26, 32, 0.8);
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+}

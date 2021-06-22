@@ -1,0 +1,15 @@
+.button {
+  font: inherit;
+  padding: 0.5rem 7.5rem;
+  color: currentColor;
+  cursor: pointer;
+  margin: 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border-radius: 100px;
+}
+
+.button:focus {
+  outline: none;
+}

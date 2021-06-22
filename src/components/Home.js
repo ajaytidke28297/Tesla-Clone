@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import Section from "./Section";
+import Section from "./section/Section";
 
 function Home() {
   const sectionData = useSelector((state) => state.car.items);

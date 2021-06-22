@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  height: 5rem;
+  height: 5.5rem;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   align-items: center;
 }
