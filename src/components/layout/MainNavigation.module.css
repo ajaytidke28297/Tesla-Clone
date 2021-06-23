@@ -56,3 +56,7 @@
 .header span {
   margin: 0 1rem;
 }
+
+.tesla {
+  fill: red;
+}
