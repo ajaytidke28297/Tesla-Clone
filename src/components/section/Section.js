@@ -1,25 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import classes from "./Section.module.css";
-import Button from "../ui/Button";
+import Button from "../UI/Button";
+import Header from "../UI/Header";
 
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundImg} id={props.id}>
-      <div className={classes.heading}>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-      </div>
-
-      <Buttons>
+      <Header title={props.title} description={props.description} />
+      <div className={classes["section-bottom"]}>
         <div className={classes["button-group"]}>
-          {props.leftBtnText && <Button text={props.leftBtnText} />}
+          {props.leftBtnText && (
+            <Button className={classes.leftButton} text={props.leftBtnText} />
+          )}
           {props.rightBtnText && (
-            <RightButton>{props.rightBtnText}</RightButton>
+            <Button className={classes.rightButton} text={props.rightBtnText} />
           )}
         </div>
-        <DownArrow src="/images/down-arrow.svg" />
-      </Buttons>
+        <img
+          className={classes.downArrow}
+          src="/images/down-arrow.svg"
+          alt="Down arrow"
+        />
+      </div>
     </Wrap>
   );
 }
@@ -39,32 +42,3 @@ const Wrap = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-
-const LeftButton = styled.div`
-  background-color: rgba(23, 26, 32, 0.8);
-  height: 40px;
-  width: 256px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  opacity: 0.85;
-  text-transform: uppercase;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 8px;
-`;
-
-const RightButton = styled(LeftButton)`
-  background-color: white;
-  opacity: 0.65;
-  color: black;
-`;
-
-const DownArrow = styled.img`
-  height: 40px;
-  animation: animateDown infinite 1.5s;
-`;
-
-const Buttons = styled.div``;

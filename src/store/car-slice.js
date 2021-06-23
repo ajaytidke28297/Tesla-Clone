@@ -57,7 +57,7 @@ const carSlice = createSlice({
         title: "Accessories",
         description: "",
         backgroundImg: "accessories.jpg",
-        leftBtnText: "Order now",
+        leftBtnText: "Shop now",
       },
     ],
   },

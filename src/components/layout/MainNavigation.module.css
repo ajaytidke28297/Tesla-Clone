@@ -13,7 +13,7 @@
   flex: 1 1 15%;
 }
 
-.header *:nth-child(3) {
+.header > *:nth-child(3) {
   flex: 1 1 15%;
 }
 

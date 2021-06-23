@@ -1,0 +1,14 @@
+.heading {
+  padding-top: 15vh;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.heading h1 {
+  font-size: 4rem;
+}
+
+.heading p {
+  font-size: 1.5rem;
+}

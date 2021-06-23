@@ -1,0 +1,51 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 2rem auto;
+  font-weight: 600;
+}
+
+.product-detail h1 {
+  font-size: 3rem;
+  font-weight: inherit;
+}
+
+.product-detail p {
+  font-size: 1.2rem;
+  font-weight: inherit;
+}
+.product-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.button {
+  background: transparent;
+  border: 3px solid white;
+  color: inherit;
+  width: 15rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}

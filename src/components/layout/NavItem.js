@@ -5,7 +5,7 @@ import classes from "./NavItem.module.css";
 function NavItem(props) {
   return (
     <li className={classes.item}>
-      <NavLink to="/ModelS">
+      <NavLink to={`/${props.item.replace(" ", "")}`}>
         <span>{props.item}</span>
       </NavLink>
     </li>

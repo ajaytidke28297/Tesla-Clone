@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Layout from "./components/layout/Layout";
+import Product from "./components/product/Product";
 
 function App() {
   return (
@@ -11,8 +12,18 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/ModelX">Model X</Route>
-        <Route path="/Model3">Model 3</Route>
+        <Route path="/ModelS" exact>
+          <Product id="ModelS" />
+        </Route>
+        <Route path="/Model3" exact>
+          <Product id="Model3" />
+        </Route>
+        <Route path="/ModelX" exact>
+          <Product id="ModelX" />
+        </Route>
+        <Route path="/ModelY" exact>
+          <Product id="ModelY" />
+        </Route>
         <Route path="*">
           <Redirect to="/" />
         </Route>
