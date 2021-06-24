@@ -8,6 +8,7 @@
   opacity: 0.8;
   border-radius: 100px;
   width: 256px;
+  font-weight: 500;
 }
 
 .button:focus {
